@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import {User} from "./Components/User"
 import './App.css';
+import Saludo from "./Components/Saludo";
+import Boton from "./Components/Boton";
+import Lista from "./Components/Lista";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Lista items={['Elemento 1', 'Elemento 2', 'Elemento 3']} />
+      <Boton texto="Haz Clik a qui"></Boton>
+      <Saludo></Saludo>
+      <User></User>
     </div>
   );
 }
